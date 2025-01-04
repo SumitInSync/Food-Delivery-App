@@ -1,0 +1,40 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Build and distribution directories
+dist/
+build/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+
+# IDE and editor-specific files
+.vscode/
+.idea/
+
+# Uploads folder (if you don't want to push uploaded images to Git)
+uploads/
+
+# Coverage directory (for test coverage results)
+coverage/
+
+# Optional: You can ignore this if you have a package-lock.json file
+package-lock.json
+yarn.lock
+
+# Optional: Ignore tests folder if it's not part of the repo
+tests/
