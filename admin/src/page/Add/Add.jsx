@@ -60,17 +60,17 @@ function Add() {
         <div className="add-img-upload flex-col">
             <p>Upload Image</p>
             <label htmlFor="image">
-                <img src={image? URL.createObjectURL(image) : assets.upload_area} alt="" />
+                <img required src={image? URL.createObjectURL(image) : assets.upload_area} alt="" />
             </label>
             <input onChange={(e)=> setImage(e.target.files[0])} type="file" id='image' hidden required />
         </div>
         <div className="add-product-name flex-col">
             <p>Product name</p>
-            <input onChange={onChangeHandler} value={data.name}  type="text" name='name' placeholder='Type here'/>
+            <input required onChange={onChangeHandler} value={data.name}  type="text" name='name' placeholder='Type here'/>
         </div>
         <div className="add-product-description flex-col">
             <p>Product description</p>
-            <textarea onChange={onChangeHandler} value={data.description} name="description" rows="6" placeholder="Write content here"></textarea>
+            <textarea required onChange={onChangeHandler} value={data.description} name="description" rows="6" placeholder="Write content here"></textarea>
         </div>
         <div className="add-category-price">
             <div className="add-category flex-col">
@@ -88,7 +88,7 @@ function Add() {
             </div>  
             <div className="add-price flex-col">
                 <p>Product price</p>
-                <input onChange={onChangeHandler} value={data.price} type="number" name='price' placeholder='$20' />
+                <input required onChange={onChangeHandler} value={data.price} type="number" name='price' placeholder='$20' />
             </div> 
         </div>
         <button className='add-btn' type='submit'>ADD</button>
