@@ -7,7 +7,7 @@ dotenv.config(); // Load environment variables from .env
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 // placing user order from frontend
 const placeOrder = async(req,res) => {
-    const frontendUrl = "http://localhost:5174";
+    const frontendUrl = "https://food-delivery-frontend-e411.onrender.com";
     try {
         const newOrder = new orderModel({
             userId : req.body.userId,

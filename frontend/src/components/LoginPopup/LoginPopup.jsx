@@ -8,7 +8,7 @@ import { StoreContext } from '../../content/StoreContext';
 function LoginPopup({ setShowLogin }) {
   const [currState, setCurrState] = useState('Sign Up');
   const { token, setToken } = useContext(StoreContext);
-  const Url = import.meta.env.VITE_BACKEND_URL;
+  const Url = "https://food-delivery-backend-bmun.onrender.com";
 
   const [data, setData] = useState({
     name: '',
