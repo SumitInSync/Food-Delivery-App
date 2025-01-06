@@ -27,7 +27,7 @@ build/
 .idea/
 
 # Uploads folder (if you don't want to push uploaded images to Git)
-uploads/
+
 
 # Coverage directory (for test coverage results)
 coverage/
